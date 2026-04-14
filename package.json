@@ -4,7 +4,7 @@
   "description": "Local NLP text compressor CLI — compress prompts/requirements to save LLM tokens (no API key needed)",
   "type": "module",
   "bin": {
-    "tcomp": "./bin/compress.js"
+    "tcomp": "bin/compress.js"
   },
   "scripts": {
     "start": "node bin/compress.js",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chinasvsai/tcomp-cli.git"
+    "url": "git+https://github.com/chinasvsai/tcomp-cli.git"
   },
   "engines": {
     "node": ">=18.0.0"
