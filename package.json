@@ -1,0 +1,47 @@
+{
+  "name": "tcomp-nlp",
+  "version": "2.0.0",
+  "description": "Local NLP text compressor CLI — compress prompts/requirements to save LLM tokens (no API key needed)",
+  "type": "module",
+  "bin": {
+    "tcomp": "./bin/compress.js"
+  },
+  "scripts": {
+    "start": "node bin/compress.js",
+    "setup-nlp": "bash scripts/setup-nlp.sh",
+    "setup-nlp:zh": "bash scripts/setup-nlp.sh --zh",
+    "setup-nlp:en": "bash scripts/setup-nlp.sh --en",
+    "setup-nlp:reset": "bash scripts/setup-nlp.sh --reset"
+  },
+  "keywords": [
+    "nlp",
+    "text-compression",
+    "token-saving",
+    "llm",
+    "prompt",
+    "textrank",
+    "lexrank",
+    "spacy",
+    "requirements",
+    "cli"
+  ],
+  "author": "chinavsai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chinasvsai/tcomp-cli.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "scripts/",
+    "README.md"
+  ],
+  "dependencies": {
+    "commander": "^12.0.0",
+    "ml-matrix": "^6.12.0"
+  }
+}
